@@ -31,7 +31,8 @@ from torch.autograd import Variable
 from torch import nn
 from torch.nn import functional as F
 import sys
-from os.path import abspath, join, dirname
+from os.path import abspath, dirname
+# enabling modules discovery from global entrypoint
 sys.path.append(abspath(dirname(__file__)+'/../'))
 from common.layers import ConvNorm, LinearNorm
 from common.utils import to_gpu, get_mask_from_lengths
